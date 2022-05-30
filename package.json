@@ -1,5 +1,4 @@
 {
-  "name": "@ezirel/modal",
   "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -37,5 +36,6 @@
   },
   "description": "React modal component",
   "author": "ezirel",
-  "license": "ISC"
+  "license": "ISC",
+  "name": "ezirel-oc-modal"
 }
