@@ -27,4 +27,6 @@ Modal.propTypes = {
 	handleState: PropTypes.func.isRequired,
 };
 
-export default Modal;
+export {
+	Modal,
+};
