@@ -4,27 +4,17 @@ import { PropTypes } from "prop-types";
 
 import "./Modal.css";
 
-const Modal = ({ handleState }) => {
-
-	const closeModal = (e) => {
-		e.preventDefault();
-		handleState(false);
-	};
+const Modal = ({ children }) => {
 
 	return (
-		<div className="modalOverlay show">
-			<div className="confirmModal">
-				<h2>Successfully added subject to database</h2>
-				<div className="modalHeader">
-					<button onClick={closeModal}>Close this dialog</button>
-				</div>
-			</div>
+		<div className="modalOverlay">
+			{children}
 		</div>
 	);
 };
 
 Modal.propTypes = {
-	handleState: PropTypes.func.isRequired,
+	children: PropTypes.node
 };
 
 export {
